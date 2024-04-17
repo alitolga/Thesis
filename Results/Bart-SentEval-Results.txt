@@ -1,0 +1,320 @@
+2024-03-10 16:37:50,817 : ***** Transfer task : STS12 *****
+
+
+C:\Users\alito\AppData\Local\Temp\ipykernel_23856\1142167410.py:21: FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison
+  se_sentences = [sent if sent != [] else ['.'] for sent in batch]
+2024-03-10 16:38:32,590 : MSRpar : pearson = 0.0452, spearman = 0.0764
+2024-03-10 16:38:48,762 : MSRvid : pearson = 0.1544, spearman = 0.1989
+2024-03-10 16:39:03,662 : SMTeuroparl : pearson = 0.3618, spearman = 0.4329
+2024-03-10 16:39:32,864 : surprise.OnWN : pearson = 0.4015, spearman = 0.6338
+2024-03-10 16:39:49,229 : surprise.SMTnews : pearson = 0.3861, spearman = 0.5516
+2024-03-10 16:39:49,230 : ALL (weighted average) : Pearson = 0.2480,             Spearman = 0.3541
+2024-03-10 16:39:49,231 : ALL (average) : Pearson = 0.2698,             Spearman = 0.3787
+
+2024-03-10 16:39:49,232 : ***** Transfer task : STS13 (-SMT) *****
+
+
+2024-03-10 16:40:04,603 : FNWN : pearson = -0.1041, spearman = -0.1623
+2024-03-10 16:40:23,898 : headlines : pearson = 0.0055, spearman = 0.1110
+2024-03-10 16:40:38,513 : OnWN : pearson = 0.3128, spearman = 0.4694
+2024-03-10 16:40:38,514 : ALL (weighted average) : Pearson = 0.1066,             Spearman = 0.2106
+2024-03-10 16:40:38,515 : ALL (average) : Pearson = 0.0714,             Spearman = 0.1394
+
+2024-03-10 16:40:38,515 : ***** Transfer task : STS14 *****
+
+
+2024-03-10 16:40:52,044 : deft-forum : pearson = 0.0367, spearman = 0.1038
+2024-03-10 16:41:14,361 : deft-news : pearson = -0.0687, spearman = -0.0281
+2024-03-10 16:41:36,665 : headlines : pearson = 0.2193, spearman = 0.3203
+2024-03-10 16:41:58,428 : images : pearson = 0.4446, spearman = 0.4913
+2024-03-10 16:42:20,194 : OnWN : pearson = 0.2940, spearman = 0.4981
+2024-03-10 16:42:49,814 : tweet-news : pearson = 0.3338, spearman = 0.4534
+2024-03-10 16:42:49,815 : ALL (weighted average) : Pearson = 0.2573,             Spearman = 0.3628
+2024-03-10 16:42:49,816 : ALL (average) : Pearson = 0.2100,             Spearman = 0.3065
+
+2024-03-10 16:42:49,817 : ***** Transfer task : STS15 *****
+
+
+2024-03-10 16:43:10,785 : answers-forums : pearson = -0.1224, spearman = -0.1804
+2024-03-10 16:43:31,870 : answers-students : pearson = 0.3906, spearman = 0.4378
+2024-03-10 16:43:58,012 : belief : pearson = 0.0796, spearman = 0.2715
+2024-03-10 16:44:21,093 : headlines : pearson = 0.5354, spearman = 0.6991
+2024-03-10 16:44:44,464 : images : pearson = 0.3679, spearman = 0.4232
+2024-03-10 16:44:44,466 : ALL (weighted average) : Pearson = 0.3181,             Spearman = 0.4014
+2024-03-10 16:44:44,467 : ALL (average) : Pearson = 0.2502,             Spearman = 0.3302
+
+2024-03-10 16:44:44,467 : ***** Transfer task : STS16 *****
+
+
+2024-03-10 16:44:53,414 : answer-answer : pearson = 0.0571, spearman = 0.0717
+2024-03-10 16:44:59,380 : headlines : pearson = 0.2573, spearman = 0.2578
+2024-03-10 16:45:07,457 : plagiarism : pearson = 0.4257, spearman = 0.5359
+2024-03-10 16:45:27,293 : postediting : pearson = 0.2438, spearman = 0.4354
+2024-03-10 16:45:33,627 : question-question : pearson = -0.0056, spearman = 0.0792
+2024-03-10 16:45:33,627 : ALL (weighted average) : Pearson = 0.1980,             Spearman = 0.2769
+2024-03-10 16:45:33,628 : ALL (average) : Pearson = 0.1956,             Spearman = 0.2760
+
+2024-03-10 16:45:33,628 : ***** Transfer task : MR *****
+
+
+2024-03-10 16:45:33,657 : Generating sentence embeddings
+2024-03-10 16:50:24,607 : Generated sentence embeddings
+2024-03-10 16:50:24,609 : Training pytorch-MLP-nhid0-rmsprop-bs128 with (inner) 5-fold cross-validation
+2024-03-10 16:50:44,980 : Best param found at split 1: l2reg = 0.0001                 with score 75.54
+2024-03-10 16:51:06,540 : Best param found at split 2: l2reg = 1e-05                 with score 74.77
+2024-03-10 16:51:28,880 : Best param found at split 3: l2reg = 1e-05                 with score 74.7
+2024-03-10 16:51:50,650 : Best param found at split 4: l2reg = 1e-05                 with score 74.36
+2024-03-10 16:52:10,823 : Best param found at split 5: l2reg = 0.001                 with score 74.76
+2024-03-10 16:52:12,007 : Dev acc : 74.83 Test acc : 74.99
+
+2024-03-10 16:52:12,014 : ***** Transfer task : CR *****
+
+
+2024-03-10 16:52:12,035 : Generating sentence embeddings
+2024-03-10 16:53:26,886 : Generated sentence embeddings
+2024-03-10 16:53:26,888 : Training pytorch-MLP-nhid0-rmsprop-bs128 with (inner) 5-fold cross-validation
+2024-03-10 16:53:34,466 : Best param found at split 1: l2reg = 0.0001                 with score 79.21
+2024-03-10 16:53:43,172 : Best param found at split 2: l2reg = 0.0001                 with score 80.13
+2024-03-10 16:53:51,620 : Best param found at split 3: l2reg = 1e-05                 with score 80.17
+2024-03-10 16:53:59,752 : Best param found at split 4: l2reg = 1e-05                 with score 80.4
+2024-03-10 16:54:08,397 : Best param found at split 5: l2reg = 1e-05                 with score 80.36
+2024-03-10 16:54:08,779 : Dev acc : 80.05 Test acc : 78.57
+
+2024-03-10 16:54:08,781 : ***** Transfer task : MPQA *****
+
+
+2024-03-10 16:54:08,795 : Generating sentence embeddings
+2024-03-10 16:55:11,414 : Generated sentence embeddings
+2024-03-10 16:55:11,415 : Training pytorch-MLP-nhid0-rmsprop-bs128 with (inner) 5-fold cross-validation
+2024-03-10 16:55:30,806 : Best param found at split 1: l2reg = 1e-05                 with score 88.38
+2024-03-10 16:55:51,082 : Best param found at split 2: l2reg = 0.001                 with score 88.13
+2024-03-10 16:56:13,543 : Best param found at split 3: l2reg = 1e-05                 with score 88.9
+2024-03-10 16:56:34,124 : Best param found at split 4: l2reg = 0.001                 with score 88.33
+2024-03-10 16:56:55,671 : Best param found at split 5: l2reg = 1e-05                 with score 88.45
+2024-03-10 16:56:57,002 : Dev acc : 88.44 Test acc : 88.97
+
+2024-03-10 16:56:57,007 : ***** Transfer task : SUBJ *****
+
+
+2024-03-10 16:56:57,035 : Generating sentence embeddings
+2024-03-10 17:01:41,137 : Generated sentence embeddings
+2024-03-10 17:01:41,139 : Training pytorch-MLP-nhid0-rmsprop-bs128 with (inner) 5-fold cross-validation
+2024-03-10 17:02:02,480 : Best param found at split 1: l2reg = 1e-05                 with score 91.68
+2024-03-10 17:02:27,258 : Best param found at split 2: l2reg = 0.0001                 with score 91.89
+2024-03-10 17:02:48,522 : Best param found at split 3: l2reg = 0.001                 with score 92.11
+2024-03-10 17:03:12,483 : Best param found at split 4: l2reg = 0.0001                 with score 92.09
+2024-03-10 17:03:36,392 : Best param found at split 5: l2reg = 1e-05                 with score 91.91
+2024-03-10 17:03:37,421 : Dev acc : 91.94 Test acc : 91.47
+
+2024-03-10 17:03:37,429 : ***** Transfer task : SST Binary classification *****
+
+
+2024-03-10 17:03:37,874 : Computing embedding for train
+2024-03-10 17:19:34,605 : Computed train embeddings
+2024-03-10 17:19:34,606 : Computing embedding for dev
+2024-03-10 17:19:55,720 : Computed dev embeddings
+2024-03-10 17:19:55,721 : Computing embedding for test
+2024-03-10 17:20:39,985 : Computed test embeddings
+2024-03-10 17:20:39,987 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 17:21:17,342 : [('reg:1e-05', 76.26), ('reg:0.0001', 76.72), ('reg:0.001', 73.28), ('reg:0.01', 67.32)]
+2024-03-10 17:21:17,344 : Validation : best param found is reg = 0.0001 with score             76.72
+2024-03-10 17:21:17,345 : Evaluating...
+2024-03-10 17:21:26,967 : 
+Dev acc : 76.72 Test acc : 76.83 for             SST Binary classification
+
+2024-03-10 17:21:26,989 : ***** Transfer task : SST Fine-Grained classification *****
+
+
+2024-03-10 17:21:27,078 : Computing embedding for train
+2024-03-10 17:25:02,634 : Computed train embeddings
+2024-03-10 17:25:02,635 : Computing embedding for dev
+2024-03-10 17:25:32,331 : Computed dev embeddings
+2024-03-10 17:25:32,333 : Computing embedding for test
+2024-03-10 17:26:29,274 : Computed test embeddings
+2024-03-10 17:26:29,275 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 17:26:33,673 : [('reg:1e-05', 39.15), ('reg:0.0001', 39.06), ('reg:0.001', 38.24), ('reg:0.01', 36.51)]
+2024-03-10 17:26:33,674 : Validation : best param found is reg = 1e-05 with score             39.15
+2024-03-10 17:26:33,675 : Evaluating...
+2024-03-10 17:26:34,738 : 
+Dev acc : 39.15 Test acc : 41.31 for             SST Fine-Grained classification
+
+2024-03-10 17:26:34,743 : ***** Transfer task : TREC *****
+
+
+2024-03-10 17:27:45,210 : Computed train embeddings
+2024-03-10 17:27:50,853 : Computed test embeddings
+2024-03-10 17:27:50,854 : Training pytorch-MLP-nhid0-rmsprop-bs128 with 5-fold cross-validation
+2024-03-10 17:28:03,523 : [('reg:1e-05', 77.48), ('reg:0.0001', 77.38), ('reg:0.001', 73.06), ('reg:0.01', 64.47)]
+2024-03-10 17:28:03,524 : Cross-validation : best param found is reg = 1e-05             with score 77.48
+2024-03-10 17:28:03,524 : Evaluating...
+2024-03-10 17:28:04,248 : 
+Dev acc : 77.48 Test acc : 77.2             for TREC
+
+2024-03-10 17:28:04,250 : ***** Transfer task : MRPC *****
+
+
+2024-03-10 17:28:04,275 : Computing embedding for train
+2024-03-10 17:31:42,655 : Computed train embeddings
+2024-03-10 17:31:42,656 : Computing embedding for test
+2024-03-10 17:33:18,215 : Computed test embeddings
+2024-03-10 17:33:18,256 : Training pytorch-MLP-nhid0-rmsprop-bs128 with 5-fold cross-validation
+2024-03-10 17:33:27,668 : [('reg:1e-05', 72.42), ('reg:0.0001', 72.69), ('reg:0.001', 72.13), ('reg:0.01', 70.71)]
+2024-03-10 17:33:27,669 : Cross-validation : best param found is reg = 0.0001             with score 72.69
+2024-03-10 17:33:27,670 : Evaluating...
+2024-03-10 17:33:28,202 : Dev acc : 72.69 Test acc 72.58; Test F1 80.3 for MRPC.
+
+2024-03-10 17:33:28,208 : ***** Transfer task : SICK-Entailment*****
+
+
+2024-03-10 17:33:28,243 : Computing embedding for train
+2024-03-10 17:35:12,193 : Computed train embeddings
+2024-03-10 17:35:12,194 : Computing embedding for dev
+2024-03-10 17:35:26,682 : Computed dev embeddings
+2024-03-10 17:35:26,683 : Computing embedding for test
+2024-03-10 17:37:15,540 : Computed test embeddings
+2024-03-10 17:37:15,610 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 17:37:18,095 : [('reg:1e-05', 73.8), ('reg:0.0001', 73.0), ('reg:0.001', 68.0), ('reg:0.01', 65.4)]
+2024-03-10 17:37:18,096 : Validation : best param found is reg = 1e-05 with score             73.8
+2024-03-10 17:37:18,097 : Evaluating...
+2024-03-10 17:37:18,699 : 
+Dev acc : 73.8 Test acc : 76.66 for                        SICK entailment
+
+2024-03-10 17:37:18,716 : ***** Transfer task : SICK-Relatedness*****
+
+
+2024-03-10 17:37:19,008 : Computing embedding for train
+2024-03-10 17:39:01,273 : Computed train embeddings
+2024-03-10 17:39:01,274 : Computing embedding for dev
+2024-03-10 17:39:15,921 : Computed dev embeddings
+2024-03-10 17:39:15,922 : Computing embedding for test
+2024-03-10 17:41:05,309 : Computed test embeddings
+2024-03-10 17:41:40,466 : Dev : Pearson 0.709345345786268
+2024-03-10 17:41:40,466 : Test : Pearson 0.7805657385781507 Spearman 0.718786774341772 MSE 0.4008409407482764                        for SICK Relatedness
+
+2024-03-10 17:41:40,479 : 
+
+***** Transfer task : STSBenchmark*****
+
+
+2024-03-10 17:41:40,516 : Computing embedding for train
+2024-03-10 17:44:36,043 : Computed train embeddings
+2024-03-10 17:44:36,043 : Computing embedding for dev
+2024-03-10 17:45:30,228 : Computed dev embeddings
+2024-03-10 17:45:30,229 : Computing embedding for test
+2024-03-10 17:46:13,133 : Computed test embeddings
+2024-03-10 17:46:46,403 : Dev : Pearson 0.6773420240536776
+2024-03-10 17:46:46,403 : Test : Pearson 0.5775993069921943 Spearman 0.5746101653370335 MSE 1.6584307513258456                        for SICK Relatedness
+
+2024-03-10 17:46:46,414 : ***** (Probing) Transfer task : LENGTH classification *****
+2024-03-10 17:46:46,987 : Loaded 99996 train - 9996 dev - 9996 test for Length
+2024-03-10 17:46:46,999 : Computing embeddings for train/dev/test
+2024-03-10 18:19:39,453 : Computed embeddings
+2024-03-10 18:19:39,455 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 18:20:47,729 : [('reg:1e-05', 92.88), ('reg:0.0001', 90.91), ('reg:0.001', 84.9), ('reg:0.01', 80.35)]
+2024-03-10 18:20:47,731 : Validation : best param found is reg = 1e-05 with score             92.88
+2024-03-10 18:20:47,732 : Evaluating...
+2024-03-10 18:21:04,297 : 
+Dev acc : 92.9 Test acc : 94.1 for LENGTH classification
+
+2024-03-10 18:21:04,343 : ***** (Probing) Transfer task : WORDCONTENT classification *****
+2024-03-10 18:21:05,199 : Loaded 100000 train - 10000 dev - 10000 test for WordContent
+2024-03-10 18:21:05,270 : Computing embeddings for train/dev/test
+2024-03-10 18:54:33,336 : Computed embeddings
+2024-03-10 18:54:33,337 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 18:55:34,874 : [('reg:1e-05', 91.32), ('reg:0.0001', 42.1), ('reg:0.001', 1.1), ('reg:0.01', 0.54)]
+2024-03-10 18:55:34,875 : Validation : best param found is reg = 1e-05 with score             91.32
+2024-03-10 18:55:34,876 : Evaluating...
+2024-03-10 18:55:52,178 : 
+Dev acc : 91.3 Test acc : 91.5 for WORDCONTENT classification
+
+2024-03-10 18:55:52,219 : ***** (Probing) Transfer task : DEPTH classification *****
+2024-03-10 18:55:52,520 : Loaded 100000 train - 10000 dev - 10000 test for Depth
+2024-03-10 18:55:52,607 : Computing embeddings for train/dev/test
+2024-03-10 19:25:12,730 : Computed embeddings
+2024-03-10 19:25:12,731 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 19:25:55,540 : [('reg:1e-05', 34.53), ('reg:0.0001', 34.19), ('reg:0.001', 31.62), ('reg:0.01', 24.95)]
+2024-03-10 19:25:55,541 : Validation : best param found is reg = 1e-05 with score             34.53
+2024-03-10 19:25:55,541 : Evaluating...
+2024-03-10 19:26:05,305 : 
+Dev acc : 34.5 Test acc : 32.1 for DEPTH classification
+
+2024-03-10 19:26:05,334 : ***** (Probing) Transfer task : TOPCONSTITUENTS classification *****
+2024-03-10 19:26:05,630 : Loaded 100000 train - 10000 dev - 10000 test for TopConstituents
+2024-03-10 19:26:05,697 : Computing embeddings for train/dev/test
+2024-03-10 19:59:15,513 : Computed embeddings
+2024-03-10 19:59:15,515 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 20:00:05,671 : [('reg:1e-05', 54.86), ('reg:0.0001', 53.34), ('reg:0.001', 46.34), ('reg:0.01', 33.57)]
+2024-03-10 20:00:05,672 : Validation : best param found is reg = 1e-05 with score             54.86
+2024-03-10 20:00:05,673 : Evaluating...
+2024-03-10 20:00:16,761 : 
+Dev acc : 54.9 Test acc : 55.3 for TOPCONSTITUENTS classification
+
+2024-03-10 20:00:16,806 : ***** (Probing) Transfer task : BIGRAMSHIFT classification *****
+2024-03-10 20:00:17,423 : Loaded 100000 train - 10000 dev - 10000 test for BigramShift
+2024-03-10 20:00:17,486 : Computing embeddings for train/dev/test
+2024-03-10 20:37:12,530 : Computed embeddings
+2024-03-10 20:37:12,532 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 20:38:06,435 : [('reg:1e-05', 50.75), ('reg:0.0001', 50.55), ('reg:0.001', 50.93), ('reg:0.01', 50.62)]
+2024-03-10 20:38:06,436 : Validation : best param found is reg = 0.001 with score             50.93
+2024-03-10 20:38:06,437 : Evaluating...
+2024-03-10 20:38:19,878 : 
+Dev acc : 50.9 Test acc : 50.4 for BIGRAMSHIFT classification
+
+2024-03-10 20:38:19,910 : ***** (Probing) Transfer task : TENSE classification *****
+2024-03-10 20:38:20,223 : Loaded 100000 train - 10000 dev - 10000 test for Tense
+2024-03-10 20:38:20,297 : Computing embeddings for train/dev/test
+2024-03-10 21:15:43,799 : Computed embeddings
+2024-03-10 21:15:43,800 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 21:16:44,397 : [('reg:1e-05', 85.64), ('reg:0.0001', 85.86), ('reg:0.001', 86.37), ('reg:0.01', 84.24)]
+2024-03-10 21:16:44,399 : Validation : best param found is reg = 0.001 with score             86.37
+2024-03-10 21:16:44,400 : Evaluating...
+2024-03-10 21:17:00,024 : 
+Dev acc : 86.4 Test acc : 84.1 for TENSE classification
+
+2024-03-10 21:17:00,068 : ***** (Probing) Transfer task : SUBJNUMBER classification *****
+2024-03-10 21:17:01,040 : Loaded 100000 train - 10000 dev - 10000 test for SubjNumber
+2024-03-10 21:17:01,121 : Computing embeddings for train/dev/test
+2024-03-10 21:55:50,950 : Computed embeddings
+2024-03-10 21:55:50,951 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 21:56:36,676 : [('reg:1e-05', 81.21), ('reg:0.0001', 81.2), ('reg:0.001', 80.83), ('reg:0.01', 78.62)]
+2024-03-10 21:56:36,678 : Validation : best param found is reg = 1e-05 with score             81.21
+2024-03-10 21:56:36,679 : Evaluating...
+2024-03-10 21:56:47,525 : 
+Dev acc : 81.2 Test acc : 79.8 for SUBJNUMBER classification
+
+2024-03-10 21:56:47,565 : ***** (Probing) Transfer task : OBJNUMBER classification *****
+2024-03-10 21:56:48,352 : Loaded 100000 train - 10000 dev - 10000 test for ObjNumber
+2024-03-10 21:56:48,439 : Computing embeddings for train/dev/test
+2024-03-10 22:34:28,994 : Computed embeddings
+2024-03-10 22:34:28,996 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 22:35:14,429 : [('reg:1e-05', 79.06), ('reg:0.0001', 78.93), ('reg:0.001', 78.41), ('reg:0.01', 76.37)]
+2024-03-10 22:35:14,431 : Validation : best param found is reg = 1e-05 with score             79.06
+2024-03-10 22:35:14,432 : Evaluating...
+2024-03-10 22:35:25,355 : 
+Dev acc : 79.1 Test acc : 80.1 for OBJNUMBER classification
+
+2024-03-10 22:35:25,391 : ***** (Probing) Transfer task : ODDMANOUT classification *****
+2024-03-10 22:35:25,706 : Loaded 100000 train - 10000 dev - 10000 test for OddManOut
+2024-03-10 22:35:25,791 : Computing embeddings for train/dev/test
+2024-03-10 23:18:37,529 : Computed embeddings
+2024-03-10 23:18:37,531 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-10 23:19:30,185 : [('reg:1e-05', 51.05), ('reg:0.0001', 51.12), ('reg:0.001', 51.77), ('reg:0.01', 51.81)]
+2024-03-10 23:19:30,185 : Validation : best param found is reg = 0.01 with score             51.81
+2024-03-10 23:19:30,186 : Evaluating...
+2024-03-10 23:19:43,636 : 
+Dev acc : 51.8 Test acc : 53.1 for ODDMANOUT classification
+
+2024-03-10 23:19:43,673 : ***** (Probing) Transfer task : COORDINATIONINVERSION classification *****
+2024-03-10 23:19:44,335 : Loaded 100002 train - 10002 dev - 10002 test for CoordinationInversion
+2024-03-10 23:19:44,413 : Computing embeddings for train/dev/test
+2024-03-11 00:03:10,103 : Computed embeddings
+2024-03-11 00:03:10,105 : Training pytorch-MLP-nhid0-rmsprop-bs128 with standard validation..
+2024-03-11 00:04:03,641 : [('reg:1e-05', 52.25), ('reg:0.0001', 51.99), ('reg:0.001', 51.63), ('reg:0.01', 50.91)]
+2024-03-11 00:04:03,643 : Validation : best param found is reg = 1e-05 with score             52.25
+2024-03-11 00:04:03,644 : Evaluating...
+2024-03-11 00:04:16,043 : 
+Dev acc : 52.2 Test acc : 48.2 for COORDINATIONINVERSION classification
+
+{'STS12': {'MSRpar': {'pearson': PearsonRResult(statistic=0.04515183936196698, pvalue=0.21679272524419832), 'spearman': SignificanceResult(statistic=0.07635067833819745, pvalue=0.036571651234311504), 'nsamples': 750}, 'MSRvid': {'pearson': PearsonRResult(statistic=0.15439058266765696, pvalue=2.1704388216761988e-05), 'spearman': SignificanceResult(statistic=0.1989459102654041, pvalue=3.9230061613372104e-08), 'nsamples': 750}, 'SMTeuroparl': {'pearson': PearsonRResult(statistic=0.361817825831625, pvalue=1.211256806962476e-15), 'spearman': SignificanceResult(statistic=0.43288373743419495, pvalue=2.1859503316762217e-22), 'nsamples': 459}, 'surprise.OnWN': {'pearson': PearsonRResult(statistic=0.4014663203357641, pvalue=2.0477761942097747e-30), 'spearman': SignificanceResult(statistic=0.6338235232245336, pvalue=1.6632859525491565e-85), 'nsamples': 750}, 'surprise.SMTnews': {'pearson': PearsonRResult(statistic=0.3861247717053871, pvalue=1.2336768304282508e-15), 'spearman': SignificanceResult(statistic=0.5516310136745618, pvalue=3.796084640145408e-33), 'nsamples': 399}, 'all': {'pearson': {'mean': 0.26979026798048006, 'wmean': 0.24803562507760823}, 'spearman': {'mean': 0.37872697258737836, 'wmean': 0.3541295025127243}}}, 'STS13': {'FNWN': {'pearson': PearsonRResult(statistic=-0.10413866906897672, pvalue=0.15385313383892266), 'spearman': SignificanceResult(statistic=-0.16232821527814925, pvalue=0.02563732060696253), 'nsamples': 189}, 'headlines': {'pearson': PearsonRResult(statistic=0.005462862657423831, pvalue=0.8812709665185784), 'spearman': SignificanceResult(statistic=0.11099958044320433, pvalue=0.002333076130058089), 'nsamples': 750}, 'OnWN': {'pearson': PearsonRResult(statistic=0.31279492426422006, pvalue=3.369618261671359e-14), 'spearman': SignificanceResult(statistic=0.4693893651212279, pvalue=4.3999567899950606e-32), 'nsamples': 561}, 'all': {'pearson': {'mean': 0.0713730392842224, 'wmean': 0.10659526070083916}, 'spearman': {'mean': 0.13935357676209434, 'wmean': 0.21059805765189457}}}, 'STS14': {'deft-forum': {'pearson': PearsonRResult(statistic=0.03673618142980458, pvalue=0.4369304505865606), 'spearman': SignificanceResult(statistic=0.1037960874979406, pvalue=0.027688394396404796), 'nsamples': 450}, 'deft-news': {'pearson': PearsonRResult(statistic=-0.06873965153412562, pvalue=0.2352119005700098), 'spearman': SignificanceResult(statistic=-0.028118982235688175, pvalue=0.6276069859599043), 'nsamples': 300}, 'headlines': {'pearson': PearsonRResult(statistic=0.21925437307309967, pvalue=1.2910793889076317e-09), 'spearman': SignificanceResult(statistic=0.32033353267020404, pvalue=2.3369470972959365e-19), 'nsamples': 750}, 'images': {'pearson': PearsonRResult(statistic=0.4446185049040656, pvalue=1.0949892472938277e-37), 'spearman': SignificanceResult(statistic=0.4913153451152125, pvalue=7.915179585914829e-47), 'nsamples': 750}, 'OnWN': {'pearson': PearsonRResult(statistic=0.29402212111468695, pvalue=2.016559564158217e-16), 'spearman': SignificanceResult(statistic=0.4981223980515719, pvalue=2.7799841332538274e-48), 'nsamples': 750}, 'tweet-news': {'pearson': PearsonRResult(statistic=0.33383248069955485, pvalue=5.557874503248819e-21), 'spearman': SignificanceResult(statistic=0.4533725288716713, pvalue=2.7024689457195583e-39), 'nsamples': 750}, 'all': {'pearson': {'mean': 0.20995400161451436, 'wmean': 0.25725466560712795}, 'spearman': {'mean': 0.3064701516618187, 'wmean': 0.36283477286262966}}}, 'STS15': {'answers-forums': {'pearson': PearsonRResult(statistic=-0.12237371640079034, pvalue=0.01775144311438796), 'spearman': SignificanceResult(statistic=-0.1804327895551643, pvalue=0.00044598469515329947), 'nsamples': 375}, 'answers-students': {'pearson': PearsonRResult(statistic=0.39059407987244044, pvalue=9.593877103757491e-29), 'spearman': SignificanceResult(statistic=0.4377588665825228, pvalue=1.848597495958411e-36), 'nsamples': 750}, 'belief': {'pearson': PearsonRResult(statistic=0.07955477183513412, pvalue=0.12408120471779371), 'spearman': SignificanceResult(statistic=0.2714523682693477, pvalue=9.310396727196538e-08), 'nsamples': 375}, 'headlines': {'pearson': PearsonRResult(statistic=0.535379180689285, pvalue=7.486977369933806e-57), 'spearman': SignificanceResult(statistic=0.699092585323965, pvalue=4.5162821347049166e-111), 'nsamples': 750}, 'images': {'pearson': PearsonRResult(statistic=0.3678838921617305, pvalue=1.88776503212799e-25), 'spearman': SignificanceResult(statistic=0.4231978957837952, pvalue=6.038679193350246e-34), 'nsamples': 750}, 'all': {'pearson': {'mean': 0.25020764163155995, 'wmean': 0.31811192011015693}, 'spearman': {'mean': 0.3302137852808933, 'wmean': 0.40138978426184363}}}, 'STS16': {'answer-answer': {'pearson': PearsonRResult(statistic=0.057072397612961394, pvalue=0.3650224252488559), 'spearman': SignificanceResult(statistic=0.07170878037334068, pvalue=0.25483691627589583), 'nsamples': 254}, 'headlines': {'pearson': PearsonRResult(statistic=0.2573085723180613, pvalue=3.9697727612843975e-05), 'spearman': SignificanceResult(statistic=0.2577704945427954, pvalue=3.840555819316291e-05), 'nsamples': 249}, 'plagiarism': {'pearson': PearsonRResult(statistic=0.4256516289917021, pvalue=1.544587887749051e-11), 'spearman': SignificanceResult(statistic=0.5358772758318672, pvalue=1.6968699752673086e-18), 'nsamples': 230}, 'postediting': {'pearson': PearsonRResult(statistic=0.24379140232225752, pvalue=0.000119675561224279), 'spearman': SignificanceResult(statistic=0.4354092434681578, pvalue=1.0404761684254777e-12), 'nsamples': 244}, 'question-question': {'pearson': PearsonRResult(statistic=-0.0055854616055868896, pvalue=0.9360269479379114), 'spearman': SignificanceResult(statistic=0.07924148734945317, pvalue=0.25407606605969024), 'nsamples': 209}, 'all': {'pearson': {'mean': 0.19564770792787906, 'wmean': 0.19796276463747395}, 'spearman': {'mean': 0.27600145631312284, 'wmean': 0.27694096379391253}}}, 'MR': {'devacc': 74.83, 'acc': 74.99, 'ndev': 10662, 'ntest': 10662}, 'CR': {'devacc': 80.05, 'acc': 78.57, 'ndev': 3775, 'ntest': 3775}, 'MPQA': {'devacc': 88.44, 'acc': 88.97, 'ndev': 10606, 'ntest': 10606}, 'SUBJ': {'devacc': 91.94, 'acc': 91.47, 'ndev': 10000, 'ntest': 10000}, 'SST2': {'devacc': 76.72, 'acc': 76.83, 'ndev': 872, 'ntest': 1821}, 'SST5': {'devacc': 39.15, 'acc': 41.31, 'ndev': 1101, 'ntest': 2210}, 'TREC': {'devacc': 77.48, 'acc': 77.2, 'ndev': 5452, 'ntest': 500}, 'MRPC': {'devacc': 72.69, 'acc': 72.58, 'f1': 80.3, 'ndev': 4076, 'ntest': 1725}, 'SICKEntailment': {'devacc': 73.8, 'acc': 76.66, 'ndev': 500, 'ntest': 4927}, 'SICKRelatedness': {'devpearson': 0.709345345786268, 'pearson': 0.7805657385781507, 'spearman': 0.718786774341772, 'mse': 0.4008409407482764, 'yhat': array([3.47202049, 3.96647928, 1.04790472, ..., 3.10016288, 4.46390541,
+       4.28819583]), 'ndev': 500, 'ntest': 4927}, 'STSBenchmark': {'devpearson': 0.6773420240536776, 'pearson': 0.5775993069921943, 'spearman': 0.5746101653370335, 'mse': 1.6584307513258456, 'yhat': array([2.01004276, 1.2145617 , 2.0979044 , ..., 3.4047354 , 3.13764383,
+       2.96081788]), 'ndev': 1500, 'ntest': 1379}, 'Length': {'devacc': 92.88, 'acc': 94.11, 'ndev': 9996, 'ntest': 9996}, 'WordContent': {'devacc': 91.32, 'acc': 91.51, 'ndev': 10000, 'ntest': 10000}, 'Depth': {'devacc': 34.53, 'acc': 32.1, 'ndev': 10000, 'ntest': 10000}, 'TopConstituents': {'devacc': 54.86, 'acc': 55.29, 'ndev': 10000, 'ntest': 10000}, 'BigramShift': {'devacc': 50.93, 'acc': 50.4, 'ndev': 10000, 'ntest': 10000}, 'Tense': {'devacc': 86.37, 'acc': 84.1, 'ndev': 10000, 'ntest': 10000}, 'SubjNumber': {'devacc': 81.21, 'acc': 79.76, 'ndev': 10000, 'ntest': 10000}, 'ObjNumber': {'devacc': 79.06, 'acc': 80.11, 'ndev': 10000, 'ntest': 10000}, 'OddManOut': {'devacc': 51.81, 'acc': 53.09, 'ndev': 10000, 'ntest': 10000}, 'CoordinationInversion': {'devacc': 52.25, 'acc': 48.24, 'ndev': 10002, 'ntest': 10002}}

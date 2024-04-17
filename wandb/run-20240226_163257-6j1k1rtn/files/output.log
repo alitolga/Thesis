@@ -1,0 +1,78 @@
+
+You're using a DebertaV2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+{'loss': 13.8434, 'learning_rate': 1.866666666666667e-05, 'epoch': 0.2}
+{'loss': 9.9096, 'learning_rate': 1.7333333333333336e-05, 'epoch': 0.4}
+{'loss': 6.2238, 'learning_rate': 1.6000000000000003e-05, 'epoch': 0.6}
+{'loss': 4.8474, 'learning_rate': 1.4666666666666666e-05, 'epoch': 0.8}
+{'loss': 4.3544, 'learning_rate': 1.3333333333333333e-05, 'epoch': 1.0}
+{'eval_loss': 3.532815933227539, 'eval_runtime': 21.0957, 'eval_samples_per_second': 47.403, 'eval_steps_per_second': 5.925, 'epoch': 1.0}
+{'loss': 4.0216, 'learning_rate': 1.2e-05, 'epoch': 1.2}
+{'loss': 3.7881, 'learning_rate': 1.0666666666666667e-05, 'epoch': 1.4}
+{'loss': 3.5203, 'learning_rate': 9.333333333333334e-06, 'epoch': 1.6}
+{'loss': 3.2676, 'learning_rate': 8.000000000000001e-06, 'epoch': 1.8}
+{'loss': 3.0961, 'learning_rate': 6.666666666666667e-06, 'epoch': 2.0}
+{'eval_loss': 2.187920331954956, 'eval_runtime': 30.3958, 'eval_samples_per_second': 32.899, 'eval_steps_per_second': 4.112, 'epoch': 2.0}
+{'loss': 2.9029, 'learning_rate': 5.333333333333334e-06, 'epoch': 2.2}
+{'loss': 2.7429, 'learning_rate': 4.000000000000001e-06, 'epoch': 2.4}
+{'loss': 2.6654, 'learning_rate': 2.666666666666667e-06, 'epoch': 2.6}
+{'loss': 2.5724, 'learning_rate': 1.3333333333333334e-06, 'epoch': 2.8}
+{'loss': 2.609, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 1.7483670711517334, 'eval_runtime': 29.076, 'eval_samples_per_second': 34.393, 'eval_steps_per_second': 4.299, 'epoch': 3.0}
+{'train_runtime': 646.6433, 'train_samples_per_second': 18.557, 'train_steps_per_second': 2.32, 'train_loss': 4.690986104329427, 'epoch': 3.0}
+C:\Users\alito\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\convert_slow_tokenizer.py:473: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForMaskedLM were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+trainable params: 4,718,592 || all params: 189,270,372 || trainable%: 2.493043126686516
+cpu
+cpu
+Using device: cuda
+cuda:0
+You're using a DebertaV2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+{'loss': 15.0025, 'learning_rate': 1.866666666666667e-05, 'epoch': 0.2}
+{'loss': 10.2483, 'learning_rate': 1.7333333333333336e-05, 'epoch': 0.4}
+{'loss': 6.3954, 'learning_rate': 1.6000000000000003e-05, 'epoch': 0.6}
+{'loss': 4.7961, 'learning_rate': 1.4666666666666666e-05, 'epoch': 0.8}
+{'loss': 4.3284, 'learning_rate': 1.3333333333333333e-05, 'epoch': 1.0}
+{'eval_loss': 3.4861807823181152, 'eval_runtime': 174.3921, 'eval_samples_per_second': 5.734, 'eval_steps_per_second': 0.717, 'epoch': 1.0}
+{'loss': 4.0298, 'learning_rate': 1.2e-05, 'epoch': 1.2}
+{'loss': 3.7983, 'learning_rate': 1.0666666666666667e-05, 'epoch': 1.4}
+{'loss': 3.5382, 'learning_rate': 9.333333333333334e-06, 'epoch': 1.6}
+{'loss': 3.3669, 'learning_rate': 8.000000000000001e-06, 'epoch': 1.8}
+{'loss': 3.1698, 'learning_rate': 6.666666666666667e-06, 'epoch': 2.0}
+{'eval_loss': 2.3139848709106445, 'eval_runtime': 127.35, 'eval_samples_per_second': 7.852, 'eval_steps_per_second': 0.982, 'epoch': 2.0}
+{'loss': 3.0396, 'learning_rate': 5.333333333333334e-06, 'epoch': 2.2}
+{'loss': 2.8864, 'learning_rate': 4.000000000000001e-06, 'epoch': 2.4}
+{'loss': 2.7986, 'learning_rate': 2.666666666666667e-06, 'epoch': 2.6}
+{'loss': 2.8169, 'learning_rate': 1.3333333333333334e-06, 'epoch': 2.8}
+{'loss': 2.7143, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 1.9412575960159302, 'eval_runtime': 132.5797, 'eval_samples_per_second': 7.543, 'eval_steps_per_second': 0.943, 'epoch': 3.0}
+{'train_runtime': 5186.1235, 'train_samples_per_second': 2.314, 'train_steps_per_second': 0.289, 'train_loss': 4.861977193196615, 'epoch': 3.0}
+C:\Users\alito\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\convert_slow_tokenizer.py:473: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForMaskedLM were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+trainable params: 36,864 || all params: 184,588,644 || trainable%: 0.019970892683950806
+cpu
+cpu
+Using device: cuda
+cuda:0
+You're using a DebertaV2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+{'loss': 14.9108, 'learning_rate': 1.866666666666667e-05, 'epoch': 0.2}
+{'loss': 9.3499, 'learning_rate': 1.7333333333333336e-05, 'epoch': 0.4}
+{'loss': 5.4911, 'learning_rate': 1.6000000000000003e-05, 'epoch': 0.6}
+{'loss': 4.4089, 'learning_rate': 1.4666666666666666e-05, 'epoch': 0.8}
+{'loss': 4.1108, 'learning_rate': 1.3333333333333333e-05, 'epoch': 1.0}
+{'eval_loss': 3.337996482849121, 'eval_runtime': 289.2904, 'eval_samples_per_second': 3.457, 'eval_steps_per_second': 0.432, 'epoch': 1.0}
+{'loss': 3.8465, 'learning_rate': 1.2e-05, 'epoch': 1.2}
+{'loss': 3.5978, 'learning_rate': 1.0666666666666667e-05, 'epoch': 1.4}
+{'loss': 3.322, 'learning_rate': 9.333333333333334e-06, 'epoch': 1.6}
+{'loss': 3.1347, 'learning_rate': 8.000000000000001e-06, 'epoch': 1.8}
+{'loss': 2.9274, 'learning_rate': 6.666666666666667e-06, 'epoch': 2.0}
+{'eval_loss': 1.9862620830535889, 'eval_runtime': 489.4365, 'eval_samples_per_second': 2.043, 'eval_steps_per_second': 0.255, 'epoch': 2.0}
+{'loss': 2.7869, 'learning_rate': 5.333333333333334e-06, 'epoch': 2.2}
+{'loss': 2.6187, 'learning_rate': 4.000000000000001e-06, 'epoch': 2.4}
+{'loss': 2.5354, 'learning_rate': 2.666666666666667e-06, 'epoch': 2.6}
+{'loss': 2.5466, 'learning_rate': 1.3333333333333334e-06, 'epoch': 2.8}
+{'loss': 2.4474, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 1.613372564315796, 'eval_runtime': 457.6991, 'eval_samples_per_second': 2.185, 'eval_steps_per_second': 0.273, 'epoch': 3.0}

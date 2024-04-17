@@ -1,0 +1,151 @@
+
+You're using a DebertaV2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Some weights of DebertaV2ForTokenClassification were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+trainable params: 304,909 || all params: 184,146,458 || trainable%: 0.16557961706762778
+cpu
+{'loss': 1.9463, 'learning_rate': 1.843137254901961e-05, 'epoch': 0.24}
+{'loss': 0.7652, 'learning_rate': 1.686274509803922e-05, 'epoch': 0.47}
+{'loss': 0.2815, 'learning_rate': 1.5294117647058822e-05, 'epoch': 0.71}
+{'loss': 0.2701, 'learning_rate': 1.3725490196078432e-05, 'epoch': 0.94}
+{'eval_loss': 0.4030090272426605, 'eval_runtime': 4.9243, 'eval_samples_per_second': 261.358, 'eval_steps_per_second': 32.695, 'epoch': 1.0}
+{'loss': 0.2832, 'learning_rate': 1.215686274509804e-05, 'epoch': 1.18}
+{'loss': 0.2246, 'learning_rate': 1.0588235294117648e-05, 'epoch': 1.41}
+{'loss': 0.2236, 'learning_rate': 9.019607843137256e-06, 'epoch': 1.65}
+{'loss': 0.1983, 'learning_rate': 7.450980392156863e-06, 'epoch': 1.88}
+{'eval_loss': 0.33750781416893005, 'eval_runtime': 5.5645, 'eval_samples_per_second': 231.286, 'eval_steps_per_second': 28.933, 'epoch': 2.0}
+{'loss': 0.183, 'learning_rate': 5.882352941176471e-06, 'epoch': 2.12}
+{'loss': 0.2052, 'learning_rate': 4.313725490196079e-06, 'epoch': 2.35}
+{'loss': 0.1907, 'learning_rate': 2.7450980392156867e-06, 'epoch': 2.59}
+{'loss': 0.2137, 'learning_rate': 1.1764705882352942e-06, 'epoch': 2.82}
+{'eval_loss': 0.32858121395111084, 'eval_runtime': 5.4382, 'eval_samples_per_second': 236.659, 'eval_steps_per_second': 29.605, 'epoch': 3.0}
+{'train_runtime': 123.4091, 'train_samples_per_second': 82.506, 'train_steps_per_second': 10.331, 'train_loss': 0.4022333025464825, 'epoch': 3.0}
+trainable params: 101,645 || all params: 33,616,154 || trainable%: 0.3023695096113613
+cpu
+Some weights of ElectraForTokenClassification were not initialized from the model checkpoint at google/electra-base-generator and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+You're using a ElectraTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+{'loss': 2.322, 'learning_rate': 1.843137254901961e-05, 'epoch': 0.24}
+{'loss': 2.0052, 'learning_rate': 1.686274509803922e-05, 'epoch': 0.47}
+{'loss': 1.5381, 'learning_rate': 1.5294117647058822e-05, 'epoch': 0.71}
+{'loss': 1.1382, 'learning_rate': 1.3725490196078432e-05, 'epoch': 0.94}
+{'eval_loss': 0.9615868330001831, 'eval_runtime': 2.7032, 'eval_samples_per_second': 476.111, 'eval_steps_per_second': 59.56, 'epoch': 1.0}
+{'loss': 0.8834, 'learning_rate': 1.215686274509804e-05, 'epoch': 1.18}
+{'loss': 0.6833, 'learning_rate': 1.0588235294117648e-05, 'epoch': 1.41}
+{'loss': 0.5807, 'learning_rate': 9.019607843137256e-06, 'epoch': 1.65}
+{'loss': 0.4992, 'learning_rate': 7.450980392156863e-06, 'epoch': 1.88}
+{'eval_loss': 0.5462002754211426, 'eval_runtime': 2.649, 'eval_samples_per_second': 485.838, 'eval_steps_per_second': 60.777, 'epoch': 2.0}
+{'loss': 0.4394, 'learning_rate': 5.882352941176471e-06, 'epoch': 2.12}
+{'loss': 0.4442, 'learning_rate': 4.313725490196079e-06, 'epoch': 2.35}
+{'loss': 0.4154, 'learning_rate': 2.7450980392156867e-06, 'epoch': 2.59}
+{'loss': 0.4307, 'learning_rate': 1.1764705882352942e-06, 'epoch': 2.82}
+{'eval_loss': 0.5053812265396118, 'eval_runtime': 2.5151, 'eval_samples_per_second': 511.707, 'eval_steps_per_second': 64.013, 'epoch': 3.0}
+{'train_runtime': 68.9018, 'train_samples_per_second': 147.775, 'train_steps_per_second': 18.505, 'train_loss': 0.9157291412353515, 'epoch': 3.0}
+Some weights of ElectraForSequenceClassification were not initialized from the model checkpoint at google/electra-base-generator and are newly initialized: ['classifier.dense.weight', 'classifier.dense.bias', 'classifier.out_proj.weight', 'classifier.out_proj.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+trainable params: 164,610 || all params: 33,742,084 || trainable%: 0.48784775712134437
+cpu
+{'loss': 0.6935, 'learning_rate': 1.9786666666666668e-05, 'epoch': 0.03}
+{'loss': 0.6929, 'learning_rate': 1.9573333333333335e-05, 'epoch': 0.06}
+{'loss': 0.6931, 'learning_rate': 1.936e-05, 'epoch': 0.1}
+{'loss': 0.6931, 'learning_rate': 1.9146666666666667e-05, 'epoch': 0.13}
+{'loss': 0.6931, 'learning_rate': 1.8933333333333334e-05, 'epoch': 0.16}
+{'loss': 0.6944, 'learning_rate': 1.8720000000000004e-05, 'epoch': 0.19}
+{'loss': 0.6919, 'learning_rate': 1.8506666666666667e-05, 'epoch': 0.22}
+{'loss': 0.6918, 'learning_rate': 1.8293333333333333e-05, 'epoch': 0.26}
+{'loss': 0.6888, 'learning_rate': 1.8080000000000003e-05, 'epoch': 0.29}
+{'loss': 0.6857, 'learning_rate': 1.7866666666666666e-05, 'epoch': 0.32}
+{'loss': 0.6786, 'learning_rate': 1.7653333333333336e-05, 'epoch': 0.35}
+{'loss': 0.6539, 'learning_rate': 1.7440000000000002e-05, 'epoch': 0.38}
+{'loss': 0.593, 'learning_rate': 1.7226666666666665e-05, 'epoch': 0.42}
+{'loss': 0.48, 'learning_rate': 1.7013333333333335e-05, 'epoch': 0.45}
+{'loss': 0.4123, 'learning_rate': 1.6800000000000002e-05, 'epoch': 0.48}
+{'loss': 0.37, 'learning_rate': 1.6586666666666668e-05, 'epoch': 0.51}
+{'loss': 0.331, 'learning_rate': 1.6373333333333335e-05, 'epoch': 0.54}
+{'loss': 0.3356, 'learning_rate': 1.616e-05, 'epoch': 0.58}
+{'loss': 0.3388, 'learning_rate': 1.5946666666666668e-05, 'epoch': 0.61}
+{'loss': 0.3264, 'learning_rate': 1.5733333333333334e-05, 'epoch': 0.64}
+{'loss': 0.3056, 'learning_rate': 1.552e-05, 'epoch': 0.67}
+{'loss': 0.3085, 'learning_rate': 1.5306666666666667e-05, 'epoch': 0.7}
+{'loss': 0.3094, 'learning_rate': 1.5093333333333335e-05, 'epoch': 0.74}
+{'loss': 0.2934, 'learning_rate': 1.4880000000000002e-05, 'epoch': 0.77}
+{'loss': 0.292, 'learning_rate': 1.4666666666666666e-05, 'epoch': 0.8}
+{'loss': 0.3284, 'learning_rate': 1.4453333333333334e-05, 'epoch': 0.83}
+{'loss': 0.285, 'learning_rate': 1.4240000000000001e-05, 'epoch': 0.86}
+{'loss': 0.3187, 'learning_rate': 1.4026666666666669e-05, 'epoch': 0.9}
+{'loss': 0.3157, 'learning_rate': 1.3813333333333334e-05, 'epoch': 0.93}
+{'loss': 0.2997, 'learning_rate': 1.3600000000000002e-05, 'epoch': 0.96}
+{'loss': 0.2857, 'learning_rate': 1.3386666666666668e-05, 'epoch': 0.99}
+{'eval_loss': 0.29044219851493835, 'eval_runtime': 104.3057, 'eval_samples_per_second': 239.68, 'eval_steps_per_second': 29.96, 'epoch': 1.0}
+{'loss': 0.2931, 'learning_rate': 1.3173333333333333e-05, 'epoch': 1.02}
+{'loss': 0.3128, 'learning_rate': 1.2960000000000001e-05, 'epoch': 1.06}
+{'loss': 0.2929, 'learning_rate': 1.2746666666666668e-05, 'epoch': 1.09}
+{'loss': 0.2891, 'learning_rate': 1.2533333333333336e-05, 'epoch': 1.12}
+{'loss': 0.3454, 'learning_rate': 1.232e-05, 'epoch': 1.15}
+{'loss': 0.2884, 'learning_rate': 1.2106666666666667e-05, 'epoch': 1.18}
+{'loss': 0.2992, 'learning_rate': 1.1893333333333335e-05, 'epoch': 1.22}
+{'loss': 0.2951, 'learning_rate': 1.168e-05, 'epoch': 1.25}
+{'loss': 0.3145, 'learning_rate': 1.1466666666666668e-05, 'epoch': 1.28}
+{'loss': 0.284, 'learning_rate': 1.1253333333333335e-05, 'epoch': 1.31}
+{'loss': 0.3101, 'learning_rate': 1.1040000000000001e-05, 'epoch': 1.34}
+{'loss': 0.2982, 'learning_rate': 1.0826666666666667e-05, 'epoch': 1.38}
+{'loss': 0.2577, 'learning_rate': 1.0613333333333334e-05, 'epoch': 1.41}
+{'loss': 0.3221, 'learning_rate': 1.04e-05, 'epoch': 1.44}
+{'loss': 0.3081, 'learning_rate': 1.0186666666666667e-05, 'epoch': 1.47}
+{'loss': 0.3119, 'learning_rate': 9.973333333333333e-06, 'epoch': 1.5}
+{'loss': 0.2918, 'learning_rate': 9.760000000000001e-06, 'epoch': 1.54}
+{'loss': 0.2836, 'learning_rate': 9.546666666666668e-06, 'epoch': 1.57}
+{'loss': 0.2746, 'learning_rate': 9.333333333333334e-06, 'epoch': 1.6}
+{'loss': 0.2681, 'learning_rate': 9.12e-06, 'epoch': 1.63}
+{'loss': 0.2854, 'learning_rate': 8.906666666666667e-06, 'epoch': 1.66}
+{'loss': 0.317, 'learning_rate': 8.693333333333334e-06, 'epoch': 1.7}
+{'loss': 0.3128, 'learning_rate': 8.48e-06, 'epoch': 1.73}
+{'loss': 0.331, 'learning_rate': 8.266666666666667e-06, 'epoch': 1.76}
+{'loss': 0.3166, 'learning_rate': 8.053333333333335e-06, 'epoch': 1.79}
+{'loss': 0.2956, 'learning_rate': 7.840000000000001e-06, 'epoch': 1.82}
+{'loss': 0.3018, 'learning_rate': 7.626666666666668e-06, 'epoch': 1.86}
+{'loss': 0.305, 'learning_rate': 7.413333333333333e-06, 'epoch': 1.89}
+{'loss': 0.2881, 'learning_rate': 7.2000000000000005e-06, 'epoch': 1.92}
+{'loss': 0.2792, 'learning_rate': 6.986666666666667e-06, 'epoch': 1.95}
+{'loss': 0.2805, 'learning_rate': 6.773333333333334e-06, 'epoch': 1.98}
+{'eval_loss': 0.28429827094078064, 'eval_runtime': 104.6513, 'eval_samples_per_second': 238.889, 'eval_steps_per_second': 29.861, 'epoch': 2.0}
+{'loss': 0.2592, 'learning_rate': 6.560000000000001e-06, 'epoch': 2.02}
+{'loss': 0.3002, 'learning_rate': 6.346666666666668e-06, 'epoch': 2.05}
+{'loss': 0.283, 'learning_rate': 6.133333333333334e-06, 'epoch': 2.08}
+{'loss': 0.2911, 'learning_rate': 5.92e-06, 'epoch': 2.11}
+{'loss': 0.2996, 'learning_rate': 5.706666666666667e-06, 'epoch': 2.14}
+{'loss': 0.3089, 'learning_rate': 5.493333333333334e-06, 'epoch': 2.18}
+{'loss': 0.317, 'learning_rate': 5.28e-06, 'epoch': 2.21}
+{'loss': 0.2825, 'learning_rate': 5.0666666666666676e-06, 'epoch': 2.24}
+{'loss': 0.2791, 'learning_rate': 4.853333333333334e-06, 'epoch': 2.27}
+{'loss': 0.3116, 'learning_rate': 4.6400000000000005e-06, 'epoch': 2.3}
+{'loss': 0.244, 'learning_rate': 4.426666666666667e-06, 'epoch': 2.34}
+{'loss': 0.3026, 'learning_rate': 4.213333333333333e-06, 'epoch': 2.37}
+{'loss': 0.2695, 'learning_rate': 4.000000000000001e-06, 'epoch': 2.4}
+{'loss': 0.3049, 'learning_rate': 3.7866666666666667e-06, 'epoch': 2.43}
+{'loss': 0.2862, 'learning_rate': 3.5733333333333336e-06, 'epoch': 2.46}
+{'loss': 0.2773, 'learning_rate': 3.3600000000000004e-06, 'epoch': 2.5}
+{'loss': 0.2958, 'learning_rate': 3.146666666666667e-06, 'epoch': 2.53}
+{'loss': 0.2375, 'learning_rate': 2.9333333333333338e-06, 'epoch': 2.56}
+{'loss': 0.2998, 'learning_rate': 2.7200000000000002e-06, 'epoch': 2.59}
+{'loss': 0.2931, 'learning_rate': 2.5066666666666667e-06, 'epoch': 2.62}
+{'loss': 0.2715, 'learning_rate': 2.2933333333333335e-06, 'epoch': 2.66}
+{'loss': 0.3126, 'learning_rate': 2.08e-06, 'epoch': 2.69}
+{'loss': 0.2441, 'learning_rate': 1.8666666666666669e-06, 'epoch': 2.72}
+{'loss': 0.3066, 'learning_rate': 1.6533333333333335e-06, 'epoch': 2.75}
+{'loss': 0.3367, 'learning_rate': 1.44e-06, 'epoch': 2.78}
+{'loss': 0.3192, 'learning_rate': 1.2266666666666666e-06, 'epoch': 2.82}
+{'loss': 0.2945, 'learning_rate': 1.0133333333333333e-06, 'epoch': 2.85}
+{'loss': 0.259, 'learning_rate': 8.000000000000001e-07, 'epoch': 2.88}
+{'loss': 0.2598, 'learning_rate': 5.866666666666667e-07, 'epoch': 2.91}
+{'loss': 0.2703, 'learning_rate': 3.733333333333334e-07, 'epoch': 2.94}
+{'loss': 0.316, 'learning_rate': 1.6e-07, 'epoch': 2.98}
+{'eval_loss': 0.27838218212127686, 'eval_runtime': 104.8359, 'eval_samples_per_second': 238.468, 'eval_steps_per_second': 29.809, 'epoch': 3.0}
+{'train_runtime': 1146.3244, 'train_samples_per_second': 65.427, 'train_steps_per_second': 8.178, 'train_loss': 0.3537013291422526, 'epoch': 3.0}
+C:\Users\alito\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\convert_slow_tokenizer.py:473: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['classifier.bias', 'pooler.dense.weight', 'classifier.weight', 'pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+You're using a DebertaV2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+trainable params: 296,450 || all params: 184,720,132 || trainable%: 0.1604860265041387

@@ -1,0 +1,33 @@
+
+You're using a ElectraTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+C:\Users\alito\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\IPython\core\completerlib.py:120: UserWarning: using rootmodules_cache requires you to install the `pickleshare` library.
+  rootmodules_cache = ip.db.get('rootmodules_cache', {})
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 91,999
+  Num Epochs = 1
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 11,500
+  Number of trainable parameters = 164,610
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 91,999
+  Num Epochs = 1
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 11,500
+  Number of trainable parameters = 164,610
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 183,999
+  Num Epochs = 1
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 23,000
+  Number of trainable parameters = 164,610

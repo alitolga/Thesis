@@ -1,0 +1,931 @@
+
+You're using a DebertaV2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+C:\Users\alito\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\IPython\core\completerlib.py:120: UserWarning: using rootmodules_cache requires you to install the `pickleshare` library.
+  rootmodules_cache = ip.db.get('rootmodules_cache', {})
+C:\Users\alito\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\IPython\core\completerlib.py:120: UserWarning: using rootmodules_cache requires you to install the `pickleshare` library.
+  rootmodules_cache = ip.db.get('rootmodules_cache', {})
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 4,000
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1,500
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+C:\Users\alito\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\data\data_collator.py:951: UserWarning: DataCollatorForWholeWordMask is only suitable for BertTokenizer-like tokenizers. Please refer to the documentation for more information.
+  warnings.warn(
+We strongly recommend passing in an `attention_mask` since your input_ids may be padded. See https://huggingface.co/docs/transformers/troubleshooting#incorrect-output-when-padding-tokens-arent-masked.
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 4,000
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1,500
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 4,000
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1,500
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 4,000
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1,500
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\config.json
+Model config DebertaV2Config {
+  "_name_or_path": "microsoft/deberta-v3-base",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "max_relative_positions": -1,
+  "model_type": "deberta-v2",
+  "norm_rel_ebd": "layer_norm",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_dropout": 0,
+  "pooler_hidden_act": "gelu",
+  "pooler_hidden_size": 768,
+  "pos_att_type": [
+    "p2c",
+    "c2p"
+  ],
+  "position_biased_input": false,
+  "position_buckets": 256,
+  "relative_attention": true,
+  "share_att_key": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 0,
+  "vocab_size": 128100
+}
+loading weights file pytorch_model.bin from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\pytorch_model.bin
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2ForSequenceClassification: ['mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.dense.bias', 'mask_predictions.dense.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.classifier.weight', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.classifier.bias', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight']
+- This IS expected if you are initializing DebertaV2ForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2ForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+trainable params: 296,450 || all params: 184,720,132 || trainable%: 0.1604860265041387
+cpu
+cpu
+cuda:0
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 4,000
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1,500
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\config.json
+Model config DebertaV2Config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "max_relative_positions": -1,
+  "model_type": "deberta-v2",
+  "norm_rel_ebd": "layer_norm",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_dropout": 0,
+  "pooler_hidden_act": "gelu",
+  "pooler_hidden_size": 768,
+  "pos_att_type": [
+    "p2c",
+    "c2p"
+  ],
+  "position_biased_input": false,
+  "position_buckets": 256,
+  "relative_attention": true,
+  "share_att_key": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 0,
+  "vocab_size": 128100
+}
+loading weights file pytorch_model.bin from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\pytorch_model.bin
+trainable params: 296,450 || all params: 184,720,132 || trainable%: 0.1604860265041387
+cpu
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2ForSequenceClassification: ['mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.dense.bias', 'mask_predictions.dense.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.classifier.weight', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.classifier.bias', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight']
+- This IS expected if you are initializing DebertaV2ForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2ForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+cpu
+cuda:0
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 4,000
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1,500
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 4,000
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1,500
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\config.json
+Model config DebertaV2Config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "max_relative_positions": -1,
+  "model_type": "deberta-v2",
+  "norm_rel_ebd": "layer_norm",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_dropout": 0,
+  "pooler_hidden_act": "gelu",
+  "pooler_hidden_size": 768,
+  "pos_att_type": [
+    "p2c",
+    "c2p"
+  ],
+  "position_biased_input": false,
+  "position_buckets": 256,
+  "relative_attention": true,
+  "share_att_key": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 0,
+  "vocab_size": 128100
+}
+loading weights file pytorch_model.bin from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\pytorch_model.bin
+trainable params: 296,450 || all params: 184,720,132 || trainable%: 0.1604860265041387
+cpu
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2ForSequenceClassification: ['mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.dense.bias', 'mask_predictions.dense.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.classifier.weight', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.classifier.bias', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight']
+- This IS expected if you are initializing DebertaV2ForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2ForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+cpu
+cuda:0
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 4,000
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 1,500
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\config.json
+Model config DebertaV2Config {
+  "_name_or_path": "microsoft/deberta-v3-base",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "max_relative_positions": -1,
+  "model_type": "deberta-v2",
+  "norm_rel_ebd": "layer_norm",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_dropout": 0,
+  "pooler_hidden_act": "gelu",
+  "pooler_hidden_size": 768,
+  "pos_att_type": [
+    "p2c",
+    "c2p"
+  ],
+  "position_biased_input": false,
+  "position_buckets": 256,
+  "relative_attention": true,
+  "share_att_key": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 0,
+  "vocab_size": 128100
+}
+loading weights file pytorch_model.bin from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\pytorch_model.bin
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2ForSequenceClassification: ['mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.dense.bias', 'mask_predictions.dense.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.classifier.weight', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.classifier.bias', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight']
+- This IS expected if you are initializing DebertaV2ForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2ForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+trainable params: 296,450 || all params: 184,720,132 || trainable%: 0.1604860265041387
+cpu
+cpu
+cuda:0
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 1,442
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 543
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 1,442
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 543
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+C:\Users\alito\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\data\data_collator.py:951: UserWarning: DataCollatorForWholeWordMask is only suitable for BertTokenizer-like tokenizers. Please refer to the documentation for more information.
+  warnings.warn(
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 1,442
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 543
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 1,442
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 543
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 1,442
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 543
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 1,442
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 543
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+cuda:0
+cuda:0
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 92,395
+  Num Epochs = 3
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 34,650
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+{'loss': 2723.6553, 'learning_rate': 1.9942279942279942e-05, 'epoch': 0.01}
+{'loss': 2726.1981, 'learning_rate': 1.9884559884559885e-05, 'epoch': 0.02}
+{'loss': 2769.7269, 'learning_rate': 1.982683982683983e-05, 'epoch': 0.03}
+{'loss': 2749.0628, 'learning_rate': 1.9769119769119772e-05, 'epoch': 0.03}
+{'loss': 2709.2741, 'learning_rate': 1.9711399711399712e-05, 'epoch': 0.04}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\special_tokens_map.json
+{'loss': 2747.2906, 'learning_rate': 1.9653679653679656e-05, 'epoch': 0.05}
+{'loss': 2683.585, 'learning_rate': 1.9595959595959596e-05, 'epoch': 0.06}
+{'loss': 2627.8197, 'learning_rate': 1.953823953823954e-05, 'epoch': 0.07}
+{'loss': 2834.1988, 'learning_rate': 1.9480519480519483e-05, 'epoch': 0.08}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-1000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-1000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-1000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\special_tokens_map.json
+{'loss': 2672.8972, 'learning_rate': 1.9422799422799427e-05, 'epoch': 0.09}
+{'loss': 2632.0469, 'learning_rate': 1.9365079365079367e-05, 'epoch': 0.1}
+{'loss': 2769.7309, 'learning_rate': 1.9307359307359307e-05, 'epoch': 0.1}
+{'loss': 2603.9608, 'learning_rate': 1.924963924963925e-05, 'epoch': 0.11}
+{'loss': 2780.0428, 'learning_rate': 1.9191919191919194e-05, 'epoch': 0.12}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-1500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-1500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-1500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\special_tokens_map.json
+{'loss': 2701.2172, 'learning_rate': 1.9134199134199138e-05, 'epoch': 0.13}
+{'loss': 2689.4338, 'learning_rate': 1.9076479076479078e-05, 'epoch': 0.14}
+{'loss': 2780.195, 'learning_rate': 1.901875901875902e-05, 'epoch': 0.15}
+{'loss': 2731.0297, 'learning_rate': 1.896103896103896e-05, 'epoch': 0.16}
+{'loss': 2776.865, 'learning_rate': 1.8903318903318905e-05, 'epoch': 0.16}
+{'loss': 2706.7616, 'learning_rate': 1.884559884559885e-05, 'epoch': 0.17}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-2000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-2000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-2000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\special_tokens_map.json
+{'loss': 2679.3016, 'learning_rate': 1.8787878787878792e-05, 'epoch': 0.18}
+{'loss': 2674.1275, 'learning_rate': 1.8730158730158732e-05, 'epoch': 0.19}
+{'loss': 2819.4991, 'learning_rate': 1.8672438672438672e-05, 'epoch': 0.2}
+{'loss': 2625.4684, 'learning_rate': 1.8614718614718616e-05, 'epoch': 0.21}
+{'loss': 2657.9294, 'learning_rate': 1.855699855699856e-05, 'epoch': 0.22}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-2500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-2500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\checkpoint-2500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SequenceClassification\special_tokens_map.json
+PyTorch: setting up devices
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 92,395
+  Num Epochs = 1
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 11,550
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+{'loss': 2669.7634, 'learning_rate': 1.982683982683983e-05, 'epoch': 0.01}
+{'loss': 2666.5687, 'learning_rate': 1.9653679653679656e-05, 'epoch': 0.02}
+{'loss': 2708.7884, 'learning_rate': 1.9480519480519483e-05, 'epoch': 0.03}
+{'loss': 2696.3809, 'learning_rate': 1.9307359307359307e-05, 'epoch': 0.03}
+{'loss': 2667.6644, 'learning_rate': 1.9134199134199138e-05, 'epoch': 0.04}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2695.8053, 'learning_rate': 1.896103896103896e-05, 'epoch': 0.05}
+{'loss': 2626.0656, 'learning_rate': 1.8787878787878792e-05, 'epoch': 0.06}
+{'loss': 2570.6413, 'learning_rate': 1.8614718614718616e-05, 'epoch': 0.07}
+{'loss': 2775.6178, 'learning_rate': 1.8441558441558443e-05, 'epoch': 0.08}
+{'loss': 2619.9402, 'learning_rate': 1.826839826839827e-05, 'epoch': 0.09}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-1000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-1000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-1000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2582.0253, 'learning_rate': 1.8095238095238097e-05, 'epoch': 0.1}
+{'loss': 2726.3063, 'learning_rate': 1.792207792207792e-05, 'epoch': 0.1}
+{'loss': 2565.0294, 'learning_rate': 1.7748917748917752e-05, 'epoch': 0.11}
+{'loss': 2744.19, 'learning_rate': 1.7575757575757576e-05, 'epoch': 0.12}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-1500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-1500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-1500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2647.5428, 'learning_rate': 1.7402597402597403e-05, 'epoch': 0.13}
+{'loss': 2660.81, 'learning_rate': 1.722943722943723e-05, 'epoch': 0.14}
+{'loss': 2734.2162, 'learning_rate': 1.7056277056277057e-05, 'epoch': 0.15}
+{'loss': 2693.2822, 'learning_rate': 1.6883116883116884e-05, 'epoch': 0.16}
+{'loss': 2724.6416, 'learning_rate': 1.670995670995671e-05, 'epoch': 0.16}
+{'loss': 2662.9522, 'learning_rate': 1.653679653679654e-05, 'epoch': 0.17}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-2000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-2000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-2000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2631.7659, 'learning_rate': 1.6363636363636366e-05, 'epoch': 0.18}
+{'loss': 2646.6197, 'learning_rate': 1.6190476190476193e-05, 'epoch': 0.19}
+{'loss': 2769.0066, 'learning_rate': 1.6017316017316017e-05, 'epoch': 0.2}
+{'loss': 2578.6348, 'learning_rate': 1.5844155844155847e-05, 'epoch': 0.21}
+{'loss': 2606.0927, 'learning_rate': 1.567099567099567e-05, 'epoch': 0.22}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-2500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-2500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-2500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2626.3341, 'learning_rate': 1.54978354978355e-05, 'epoch': 0.23}
+{'loss': 2657.0037, 'learning_rate': 1.5324675324675326e-05, 'epoch': 0.23}
+{'loss': 2577.193, 'learning_rate': 1.5151515151515153e-05, 'epoch': 0.24}
+{'loss': 2703.23, 'learning_rate': 1.4978354978354978e-05, 'epoch': 0.25}
+{'loss': 2691.3784, 'learning_rate': 1.4805194805194807e-05, 'epoch': 0.26}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-3000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-3000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-3000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2695.8509, 'learning_rate': 1.4632034632034633e-05, 'epoch': 0.27}
+{'loss': 2642.4759, 'learning_rate': 1.4458874458874458e-05, 'epoch': 0.28}
+{'loss': 2608.4391, 'learning_rate': 1.4285714285714287e-05, 'epoch': 0.29}
+{'loss': 2599.4261, 'learning_rate': 1.4112554112554113e-05, 'epoch': 0.29}
+{'loss': 2635.77, 'learning_rate': 1.3939393939393942e-05, 'epoch': 0.3}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-3500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-3500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-3500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2732.105, 'learning_rate': 1.3766233766233767e-05, 'epoch': 0.31}
+{'loss': 2614.4291, 'learning_rate': 1.3593073593073594e-05, 'epoch': 0.32}
+{'loss': 2551.4033, 'learning_rate': 1.3419913419913421e-05, 'epoch': 0.33}
+{'loss': 2561.8673, 'learning_rate': 1.3246753246753249e-05, 'epoch': 0.34}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-4000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-4000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-4000\special_tokens_map.json
+{'loss': 2568.2986, 'learning_rate': 1.3073593073593074e-05, 'epoch': 0.35}
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2605.3358, 'learning_rate': 1.2900432900432901e-05, 'epoch': 0.35}
+{'loss': 2500.5364, 'learning_rate': 1.2727272727272728e-05, 'epoch': 0.36}
+{'loss': 2517.0881, 'learning_rate': 1.2554112554112554e-05, 'epoch': 0.37}
+{'loss': 2573.8611, 'learning_rate': 1.2380952380952383e-05, 'epoch': 0.38}
+{'loss': 2430.8888, 'learning_rate': 1.2207792207792208e-05, 'epoch': 0.39}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-4500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-4500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-4500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2487.6669, 'learning_rate': 1.2034632034632037e-05, 'epoch': 0.4}
+{'loss': 2556.0386, 'learning_rate': 1.1861471861471863e-05, 'epoch': 0.41}
+{'loss': 2508.1252, 'learning_rate': 1.1688311688311688e-05, 'epoch': 0.42}
+{'loss': 2578.4456, 'learning_rate': 1.1515151515151517e-05, 'epoch': 0.42}
+{'loss': 2598.2934, 'learning_rate': 1.1341991341991343e-05, 'epoch': 0.43}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-5000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-5000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-5000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2616.4281, 'learning_rate': 1.116883116883117e-05, 'epoch': 0.44}
+{'loss': 2483.8495, 'learning_rate': 1.0995670995670997e-05, 'epoch': 0.45}
+{'loss': 2555.3955, 'learning_rate': 1.0822510822510823e-05, 'epoch': 0.46}
+{'loss': 2386.8886, 'learning_rate': 1.064935064935065e-05, 'epoch': 0.47}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-5500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-5500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-5500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2502.1444, 'learning_rate': 1.0476190476190477e-05, 'epoch': 0.48}
+{'loss': 2397.6917, 'learning_rate': 1.0303030303030304e-05, 'epoch': 0.48}
+{'loss': 2489.6553, 'learning_rate': 1.012987012987013e-05, 'epoch': 0.49}
+{'loss': 2483.5366, 'learning_rate': 9.956709956709958e-06, 'epoch': 0.5}
+{'loss': 2458.7109, 'learning_rate': 9.783549783549784e-06, 'epoch': 0.51}
+{'loss': 2455.9969, 'learning_rate': 9.610389610389611e-06, 'epoch': 0.52}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-6000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-6000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-6000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2352.0095, 'learning_rate': 9.437229437229438e-06, 'epoch': 0.53}
+{'loss': 2399.4642, 'learning_rate': 9.264069264069266e-06, 'epoch': 0.54}
+{'loss': 2396.3938, 'learning_rate': 9.090909090909091e-06, 'epoch': 0.55}
+{'loss': 2514.61, 'learning_rate': 8.917748917748918e-06, 'epoch': 0.55}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-6500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-6500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-6500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2489.4206, 'learning_rate': 8.744588744588745e-06, 'epoch': 0.56}
+{'loss': 2401.878, 'learning_rate': 8.571428571428571e-06, 'epoch': 0.57}
+{'loss': 2442.5969, 'learning_rate': 8.398268398268398e-06, 'epoch': 0.58}
+{'loss': 2319.5778, 'learning_rate': 8.225108225108225e-06, 'epoch': 0.59}
+{'loss': 2439.9205, 'learning_rate': 8.051948051948052e-06, 'epoch': 0.6}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-7000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-7000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-7000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2466.2234, 'learning_rate': 7.87878787878788e-06, 'epoch': 0.61}
+{'loss': 2466.3034, 'learning_rate': 7.705627705627707e-06, 'epoch': 0.61}
+{'loss': 2380.8647, 'learning_rate': 7.532467532467533e-06, 'epoch': 0.62}
+{'loss': 2341.4437, 'learning_rate': 7.3593073593073596e-06, 'epoch': 0.63}
+{'loss': 2339.2952, 'learning_rate': 7.186147186147187e-06, 'epoch': 0.64}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-7500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-7500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-7500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2343.2095, 'learning_rate': 7.012987012987014e-06, 'epoch': 0.65}
+{'loss': 2369.942, 'learning_rate': 6.839826839826841e-06, 'epoch': 0.66}
+{'loss': 2361.6658, 'learning_rate': 6.666666666666667e-06, 'epoch': 0.67}
+{'loss': 2422.6512, 'learning_rate': 6.493506493506494e-06, 'epoch': 0.68}
+{'loss': 2326.9627, 'learning_rate': 6.320346320346321e-06, 'epoch': 0.68}
+{'loss': 2419.1559, 'learning_rate': 6.147186147186147e-06, 'epoch': 0.69}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-8000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-8000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-8000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2366.0731, 'learning_rate': 5.9740259740259746e-06, 'epoch': 0.7}
+{'loss': 2403.6536, 'learning_rate': 5.800865800865802e-06, 'epoch': 0.71}
+{'loss': 2406.3439, 'learning_rate': 5.627705627705629e-06, 'epoch': 0.72}
+{'loss': 2262.1689, 'learning_rate': 5.4545454545454545e-06, 'epoch': 0.73}
+{'loss': 2409.0389, 'learning_rate': 5.281385281385282e-06, 'epoch': 0.74}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-8500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-8500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-8500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2447.7625, 'learning_rate': 5.108225108225109e-06, 'epoch': 0.74}
+{'loss': 2372.0225, 'learning_rate': 4.935064935064935e-06, 'epoch': 0.75}
+{'loss': 2373.9475, 'learning_rate': 4.761904761904762e-06, 'epoch': 0.76}
+{'loss': 2388.457, 'learning_rate': 4.5887445887445896e-06, 'epoch': 0.77}
+{'loss': 2435.6836, 'learning_rate': 4.415584415584416e-06, 'epoch': 0.78}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-9000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-9000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-9000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2320.8708, 'learning_rate': 4.242424242424243e-06, 'epoch': 0.79}
+{'loss': 2423.6436, 'learning_rate': 4.0692640692640695e-06, 'epoch': 0.8}
+{'loss': 2366.5819, 'learning_rate': 3.896103896103897e-06, 'epoch': 0.81}
+{'loss': 2316.8306, 'learning_rate': 3.722943722943723e-06, 'epoch': 0.81}
+{'loss': 2370.642, 'learning_rate': 3.54978354978355e-06, 'epoch': 0.82}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-9500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-9500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-9500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2271.0325, 'learning_rate': 3.376623376623377e-06, 'epoch': 0.83}
+{'loss': 2351.5517, 'learning_rate': 3.2034632034632033e-06, 'epoch': 0.84}
+{'loss': 2360.8469, 'learning_rate': 3.0303030303030305e-06, 'epoch': 0.85}
+{'loss': 2340.9042, 'learning_rate': 2.8571428571428573e-06, 'epoch': 0.86}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-10000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-10000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-10000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2347.3409, 'learning_rate': 2.6839826839826844e-06, 'epoch': 0.87}
+{'loss': 2467.0502, 'learning_rate': 2.510822510822511e-06, 'epoch': 0.87}
+{'loss': 2524.1878, 'learning_rate': 2.337662337662338e-06, 'epoch': 0.88}
+{'loss': 2396.957, 'learning_rate': 2.1645021645021648e-06, 'epoch': 0.89}
+{'loss': 2386.6475, 'learning_rate': 1.9913419913419915e-06, 'epoch': 0.9}
+{'loss': 2470.6878, 'learning_rate': 1.8181818181818183e-06, 'epoch': 0.91}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-10500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-10500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-10500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2497.4637, 'learning_rate': 1.6450216450216453e-06, 'epoch': 0.92}
+{'loss': 2407.6178, 'learning_rate': 1.471861471861472e-06, 'epoch': 0.93}
+{'loss': 2356.962, 'learning_rate': 1.2987012987012986e-06, 'epoch': 0.94}
+{'loss': 2326.5481, 'learning_rate': 1.1255411255411256e-06, 'epoch': 0.94}
+{'loss': 2458.5402, 'learning_rate': 9.523809523809525e-07, 'epoch': 0.95}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-11000
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-11000\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-11000\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+{'loss': 2391.6373, 'learning_rate': 7.792207792207792e-07, 'epoch': 0.96}
+{'loss': 2361.7702, 'learning_rate': 6.060606060606061e-07, 'epoch': 0.97}
+{'loss': 2465.8531, 'learning_rate': 4.329004329004329e-07, 'epoch': 0.98}
+{'loss': 2409.0466, 'learning_rate': 2.597402597402598e-07, 'epoch': 0.99}
+{'loss': 2387.7812, 'learning_rate': 8.658008658008659e-08, 'epoch': 1.0}
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-11500
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-11500\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\checkpoint-11500\special_tokens_map.json
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+The following columns in the evaluation set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 22512
+  Batch size = 8
+Training completed. Do not forget to share your model on huggingface.co/models =)
+{'eval_loss': 2321.395751953125, 'eval_runtime': 75.0227, 'eval_samples_per_second': 300.069, 'eval_steps_per_second': 37.509, 'epoch': 1.0}
+{'train_runtime': 1002.6375, 'train_samples_per_second': 92.152, 'train_steps_per_second': 11.52, 'train_loss': 2503.684070616883, 'epoch': 1.0}
+The following columns in the evaluation set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running Evaluation *****
+  Num examples = 22512
+  Batch size = 8
+Perplexity: 2321.40
+Saving model checkpoint to mymodels/microsoft/deberta-v3-base-SeqClassification
+tokenizer config file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\tokenizer_config.json
+Special tokens file saved in mymodels/microsoft/deberta-v3-base-SeqClassification\special_tokens_map.json
+Dropping the following result as it does not have all the necessary fields:
+{}
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--google--electra-base-generator\snapshots\1c65e3f5f4597679b87620707df5774c08c6606d\config.json
+Model config ElectraConfig {
+  "_name_or_path": "google/electra-base-generator",
+  "architectures": [
+    "ElectraForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "embedding_size": 768,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 256,
+  "initializer_range": 0.02,
+  "intermediate_size": 1024,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "electra",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "summary_activation": "gelu",
+  "summary_last_dropout": 0.1,
+  "summary_type": "first",
+  "summary_use_proj": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+loading file vocab.txt from cache at C:\Users\alito/.cache\huggingface\hub\models--google--electra-base-generator\snapshots\1c65e3f5f4597679b87620707df5774c08c6606d\vocab.txt
+loading file tokenizer.json from cache at C:\Users\alito/.cache\huggingface\hub\models--google--electra-base-generator\snapshots\1c65e3f5f4597679b87620707df5774c08c6606d\tokenizer.json
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at None
+loading file tokenizer_config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--google--electra-base-generator\snapshots\1c65e3f5f4597679b87620707df5774c08c6606d\tokenizer_config.json
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--google--electra-base-generator\snapshots\1c65e3f5f4597679b87620707df5774c08c6606d\config.json
+Model config ElectraConfig {
+  "_name_or_path": "google/electra-base-generator",
+  "architectures": [
+    "ElectraForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "embedding_size": 768,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 256,
+  "initializer_range": 0.02,
+  "intermediate_size": 1024,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "electra",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "summary_activation": "gelu",
+  "summary_last_dropout": 0.1,
+  "summary_type": "first",
+  "summary_use_proj": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--google--electra-base-generator\snapshots\1c65e3f5f4597679b87620707df5774c08c6606d\config.json
+Model config ElectraConfig {
+  "_name_or_path": "google/electra-base-generator",
+  "architectures": [
+    "ElectraForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "embedding_size": 768,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 256,
+  "initializer_range": 0.02,
+  "intermediate_size": 1024,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "electra",
+  "num_attention_heads": 4,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "summary_activation": "gelu",
+  "summary_last_dropout": 0.1,
+  "summary_type": "first",
+  "summary_use_proj": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+loading weights file pytorch_model.bin from cache at C:\Users\alito/.cache\huggingface\hub\models--google--electra-base-generator\snapshots\1c65e3f5f4597679b87620707df5774c08c6606d\pytorch_model.bin
+trainable params: 164,610 || all params: 33,742,084 || trainable%: 0.48784775712134437
+cpu
+Some weights of the model checkpoint at google/electra-base-generator were not used when initializing ElectraForSequenceClassification: ['generator_predictions.dense.weight', 'generator_lm_head.weight', 'generator_predictions.LayerNorm.weight', 'generator_predictions.dense.bias', 'generator_predictions.LayerNorm.bias', 'generator_lm_head.bias']
+- This IS expected if you are initializing ElectraForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing ElectraForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of ElectraForSequenceClassification were not initialized from the model checkpoint at google/electra-base-generator and are newly initialized: ['classifier.out_proj.weight', 'classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+cpu
+cuda:0
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 92,395
+  Num Epochs = 1
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 11,550
+  Number of trainable parameters = 164,610
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+You're using a ElectraTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForSequenceClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForSequenceClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 92,395
+  Num Epochs = 1
+  Instantaneous batch size per device = 16
+  Total train batch size (w. parallel, distributed & accumulation) = 16
+  Gradient Accumulation steps = 1
+  Total optimization steps = 5,775
+  Number of trainable parameters = 164,610
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\config.json
+Model config DebertaV2Config {
+  "_name_or_path": "microsoft/deberta-v3-base",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "max_relative_positions": -1,
+  "model_type": "deberta-v2",
+  "norm_rel_ebd": "layer_norm",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_dropout": 0,
+  "pooler_hidden_act": "gelu",
+  "pooler_hidden_size": 768,
+  "pos_att_type": [
+    "p2c",
+    "c2p"
+  ],
+  "position_biased_input": false,
+  "position_buckets": 256,
+  "relative_attention": true,
+  "share_att_key": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 0,
+  "vocab_size": 128100
+}
+loading file spm.model from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\spm.model
+loading file tokenizer.json from cache at None
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at None
+loading file tokenizer_config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\tokenizer_config.json
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\config.json
+Model config DebertaV2Config {
+  "_name_or_path": "microsoft/deberta-v3-base",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "max_relative_positions": -1,
+  "model_type": "deberta-v2",
+  "norm_rel_ebd": "layer_norm",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_dropout": 0,
+  "pooler_hidden_act": "gelu",
+  "pooler_hidden_size": 768,
+  "pos_att_type": [
+    "p2c",
+    "c2p"
+  ],
+  "position_biased_input": false,
+  "position_buckets": 256,
+  "relative_attention": true,
+  "share_att_key": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 0,
+  "vocab_size": 128100
+}
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\config.json
+Model config DebertaV2Config {
+  "_name_or_path": "microsoft/deberta-v3-base",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "max_relative_positions": -1,
+  "model_type": "deberta-v2",
+  "norm_rel_ebd": "layer_norm",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_dropout": 0,
+  "pooler_hidden_act": "gelu",
+  "pooler_hidden_size": 768,
+  "pos_att_type": [
+    "p2c",
+    "c2p"
+  ],
+  "position_biased_input": false,
+  "position_buckets": 256,
+  "relative_attention": true,
+  "share_att_key": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 0,
+  "vocab_size": 128100
+}
+C:\Users\alito\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\transformers\convert_slow_tokenizer.py:473: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+loading configuration file config.json from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\config.json
+Model config DebertaV2Config {
+  "_name_or_path": "microsoft/deberta-v3-base",
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "max_relative_positions": -1,
+  "model_type": "deberta-v2",
+  "norm_rel_ebd": "layer_norm",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "pooler_dropout": 0,
+  "pooler_hidden_act": "gelu",
+  "pooler_hidden_size": 768,
+  "pos_att_type": [
+    "p2c",
+    "c2p"
+  ],
+  "position_biased_input": false,
+  "position_buckets": 256,
+  "relative_attention": true,
+  "share_att_key": true,
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 0,
+  "vocab_size": 128100
+}
+loading weights file pytorch_model.bin from cache at C:\Users\alito/.cache\huggingface\hub\models--microsoft--deberta-v3-base\snapshots\8ccc9b6f36199bec6961081d44eb72fb3f7353f3\pytorch_model.bin
+trainable params: 296,450 || all params: 184,129,540 || trainable%: 0.16100078238396728
+cpu
+Some weights of the model checkpoint at microsoft/deberta-v3-base were not used when initializing DebertaV2ForTokenClassification: ['mask_predictions.LayerNorm.weight', 'lm_predictions.lm_head.dense.bias', 'mask_predictions.dense.weight', 'lm_predictions.lm_head.bias', 'mask_predictions.classifier.weight', 'mask_predictions.dense.bias', 'lm_predictions.lm_head.LayerNorm.weight', 'lm_predictions.lm_head.LayerNorm.bias', 'mask_predictions.classifier.bias', 'mask_predictions.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight']
+- This IS expected if you are initializing DebertaV2ForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaV2ForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DebertaV2ForTokenClassification were not initialized from the model checkpoint at microsoft/deberta-v3-base and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+cpu
+cuda:0
+PyTorch: setting up devices
+The following columns in the training set don't have a corresponding argument in `PeftModelForTokenClassification.forward` and have been ignored: token_type_ids. If token_type_ids are not expected by `PeftModelForTokenClassification.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 92,395
+  Num Epochs = 1
+  Instantaneous batch size per device = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 8
+  Gradient Accumulation steps = 1
+  Total optimization steps = 11,550
+  Number of trainable parameters = 296,450
+Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
